@@ -251,7 +251,7 @@
 
           <div class="post-nav-next post-nav-item">
             
-              <a href="/2017/06/16/work1/" rel="next">第一套手表icon</a>
+              <a href="/2017/06/16/day1/" rel="next">建立自己的博客</a>
             
           </div>
         </div>
@@ -417,7 +417,14 @@
 
 
 
- </div>
+
+<script>
+	var birthDay = new Date('09/1/2016');
+	var now = new Date();
+	var duration = now.getTime() - birthDay.getTime();
+	var total= Math.floor(duration / (1000 * 60 * 60 * 24));
+	document.getElementById('showDays').innerHTML='本站已运行' + total + '天';
+</script> </div>
     </footer>
 
     <div class="back-to-top"></div>
