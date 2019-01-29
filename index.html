@@ -4222,6 +4222,11 @@
     </dd>
   </dt>
 
+	var birthDay = new Date('06/16/2017');
+	var now = new Date();
+	var duration = now.getTime() - birthDay.getTime();
+	var total= Math.floor(duration / (1000 * 60 * 60 * 24));
+	document.getElementById('showDays').innerHTML='本站已运行' + total + '天';
 
 
 <!-- busuanzi -->
@@ -4229,12 +4234,7 @@
 
 
 
-
-	var birthDay = new Date('06/16/2017');
-	var now = new Date();
-	var duration = now.getTime() - birthDay.getTime();
-	var total= Math.floor(duration / (1000 * 60 * 60 * 24));
-	document.getElementById('showDays').innerHTML='本站已运行' + total + '天'; </div>
+ </div>
     </footer>
 
     <div class="back-to-top"></div>
